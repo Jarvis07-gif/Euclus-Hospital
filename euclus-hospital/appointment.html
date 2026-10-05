@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book an appointment — EUCLUS HOSPITAL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Appointments</p>
+          <h1>Request a visit online.</h1>
+          <p>Pick a department, then a doctor. We will email a confirmation. For chest pain, stroke symptoms, or severe injury, call emergency: +1 (415) 555-0911.</p>
+        </div>
+      </section>
+      <section>
+        <div class="container" style="max-width: 820px">
+          <div data-message></div>
+          <form class="form-card" data-appt-form>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+              </div>
+              <div class="field">
+                <label for="department">Department</label>
+                <select id="department" name="department" required></select>
+              </div>
+              <div class="field">
+                <label for="doctor">Doctor</label>
+                <select id="doctor" name="doctor" required></select>
+              </div>
+              <div class="field">
+                <label for="date">Preferred date</label>
+                <input id="date" name="date" type="date" required />
+              </div>
+              <div class="field">
+                <label for="time">Preferred time</label>
+                <select id="time" name="time" required></select>
+              </div>
+              <div class="field full">
+                <label for="reason">Reason for visit</label>
+                <textarea id="reason" name="reason" placeholder="Symptoms, follow-up, or screening…"></textarea>
+              </div>
+            </div>
+            <p class="form-note">This demo stores requests in your browser only. No data is sent to a hospital server.</p>
+            <button class="btn btn-primary" type="submit" style="margin-top: 16px">Request appointment</button>
+          </form>
+          <h2 style="margin-top: 40px">Saved on this device</h2>
+          <div class="appt-list" data-appt-list></div>
+        </div>
+      </section>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/appointment.js"></script>
+  </body>
+</html>

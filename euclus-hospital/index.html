@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EUCLUS HOSPITAL — Compassionate care. Clinical excellence.</title>
+    <meta
+      name="description"
+      content="Euclus Hospital is a modern medical center with specialist departments, experienced doctors, 24/7 emergency care, and online appointment booking."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">San Francisco · Established 1998</p>
+            <h1>Care that treats the person, not just the chart.</h1>
+            <p class="lead">
+              EUCLUS HOSPITAL brings specialist medicine, 24/7 emergency readiness, and a calmer kind of hospitality under one roof.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="appointment.html">Book an appointment</a>
+              <a class="btn btn-ghost" href="departments.html">Explore departments</a>
+            </div>
+            <div class="hero-meta">
+              <div><strong>20+</strong> attending specialists</div>
+              <div><strong>8</strong> clinical departments</div>
+              <div><strong>24/7</strong> emergency desk</div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img
+              src="images/hero.jpg"
+              alt="Bright hospital corridor at Euclus Hospital"
+            />
+            <div class="float-card">
+              <span>Emergency</span>
+              <p style="margin:6px 0 0;color:var(--ink)">Always staffed. Call +1 (415) 555-0911.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Departments</p>
+              <h2>Specialist teams, coordinated around you.</h2>
+            </div>
+            <a class="btn btn-ghost" href="departments.html">All departments</a>
+          </div>
+          <div class="card-grid" data-home-depts></div>
+        </div>
+      </section>
+
+      <section style="padding-top:0">
+        <div class="container two-col">
+          <div class="panel">
+            <img
+              src="images/care.jpg"
+              alt="Clinician speaking with a patient"
+            />
+          </div>
+          <div>
+            <p class="eyebrow">Why Euclus</p>
+            <h2>Medicine with room to listen.</h2>
+            <p>
+              We designed Euclus so diagnostics, specialists, and recovery sit close together. You spend less time navigating a campus and more time understanding your plan.
+            </p>
+            <div class="values">
+              <div class="value"><span class="dot"></span><p><strong>Board-certified specialists</strong> in every department, with multiple doctors so you can choose the right fit.</p></div>
+              <div class="value"><span class="dot"></span><p><strong>Same-week appointments</strong> for most clinics, with online booking that follows you from department to doctor.</p></div>
+              <div class="value"><span class="dot"></span><p><strong>Emergency without the maze</strong> — trauma-ready teams and a fast-track for lower-acuity visits.</p></div>
+            </div>
+            <a class="btn btn-primary" href="about.html">Our story</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="stats">
+            <div class="stat"><strong>50k+</strong><p>patient visits each year</p></div>
+            <div class="stat"><strong>18 min</strong><p>average ER door-to-provider</p></div>
+            <div class="stat"><strong>96%</strong><p>patients who would recommend us</p></div>
+            <div class="stat"><strong>1 campus</strong><p>labs, imaging, and wards together</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Doctors</p>
+              <h2>Meet a few of the people who will know your name.</h2>
+            </div>
+            <a class="btn btn-ghost" href="doctors.html">All doctors</a>
+          </div>
+          <div class="doctor-grid" data-home-doctors></div>
+        </div>
+      </section>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
